@@ -1,6 +1,5 @@
 {
   "name": "botfarm",
-  "version": "0.0.1",
   "description": "Bot Management System",
   "main": "index.js",
   "dependencies": {
@@ -33,7 +32,7 @@
     "start": "node index.js",
     "test": "export NODE_DEBUG= && export NODE_ENV=tests && node ./testRunner.js"
   },
-  "keywords": ['botframework','botbuilder','bms'],
+  "keywords": ["botframework","botbuilder","bms"],
   "author": "Dmitry Shevchenko",
   "license": "MIT"
 }
