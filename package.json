@@ -1,0 +1,39 @@
+{
+  "name": "botfarm",
+  "version": "0.0.1",
+  "description": "Bot Management System",
+  "main": "index.js",
+  "dependencies": {
+    "botbuilder": "^3.8.0",
+    "botbuilder-dialog-loader": "*",
+    "botbuilder-formflow": "0.*",
+    "botbuilder-unit": "0.*",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jasmine": "^2.4.2",
+    "gulp-jasmine-node": "^1.0.7",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "node-uuid": "^1.4.8",
+    "restify": "^4.1.1",
+    "server-destroy": "^1.0.1",
+    "truncate": "^2.0.0",
+    "techfort/LokiJS" : "^1.5.1"
+  },
+  "devDependencies": {
+    "gulp-jasmine": "^2.4.2",
+    "gulp-watch": "^4.3.11",
+    "jasmine": "^2.5.3",
+    "jasmine-terminal-reporter": "^1.0.3",
+    "nock": "^9.0.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "export NODE_DEBUG= && export NODE_ENV=tests && node ./testRunner.js"
+  },
+  "keywords": ['botframework','botbuilder','bms'],
+  "author": "Dmitry Shevchenko",
+  "license": "MIT"
+}

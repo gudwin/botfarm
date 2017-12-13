@@ -1,0 +1,9 @@
+{
+  "hello" : {
+    "connector" : {
+      "app_id": "",
+      "app_password": ""
+    },
+    "phrase" : "Hello world!"
+  }
+}
