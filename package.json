@@ -16,11 +16,11 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2",
-    "node-uuid": "^1.4.8",
+    "uuid": "^3.1.0",
     "restify": "^4.1.1",
     "server-destroy": "^1.0.1",
     "truncate": "^2.0.0",
-    "techfort/LokiJS" : "^1.5.1"
+    "lokijs" : "^1.5.1"
   },
   "devDependencies": {
     "gulp-jasmine": "^2.4.2",

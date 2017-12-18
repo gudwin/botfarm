@@ -33,6 +33,14 @@ The BotFarm project is an attempt to provide a BMS solution. Major features of t
   - type `status`
   - in report you will find information about exposed REST endpoint of the bot, use it for configuration Bot Framework Dashboard
   
+# In Details 
+ 
+## Context Diagram
+
+## Build Sequence Diagram
+
+![Sequence Diagram of building process](https://github.com/gudwin/botfarm/blob/master/documentation/diagrams/sequence.png?raw=true)
+
 #  Changelog: 
 
  

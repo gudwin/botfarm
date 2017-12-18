@@ -1,0 +1,23 @@
+user:actor
+bms:application
+theme:theme
+plugin:plugin
+
+user:bms.Request to Build Bot(theme, plugins) 
+bms:bms.Prepare configuration formflow dialog
+bms:bms.Emit event "init" (settingsFormFlow, theme, plugins)
+bms:theme.Calling a theme init method(settingsFormFlow)
+theme:bms.Inject steps into configuration dialog
+theme: 
+bms:plugin.Load a plugin[s]
+plugin:bms.Inject step into configuration formflow dialog 
+plugin:
+user:Returns a settingsFormFlow
+user:user.Fills a settings 
+user:bms.Call build(settings, theme, plugins)
+bms:theme.Call build (settings)
+bms:Returns a bot
+bms:plugin.Call build (settings,bot) 
+bms:
+bms:bms.Emit event "build" (bot)
+user:Return information about a bot
