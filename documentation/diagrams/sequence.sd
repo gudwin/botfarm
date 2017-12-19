@@ -1,23 +1,27 @@
+#![<Bot Creation>]
+
 user:actor
 bms:application
 theme:theme
 plugin:plugin
+restify:restify
 
-user:bms.Request to Build Bot(theme, plugins) 
-bms:bms.Prepare configuration formflow dialog
-bms:bms.Emit event "init" (settingsFormFlow, theme, plugins)
-bms:theme.Calling a theme init method(settingsFormFlow)
-theme:bms.Inject steps into configuration dialog
-theme: 
-bms:plugin.Load a plugin[s]
-plugin:bms.Inject step into configuration formflow dialog 
-plugin:
-user:Returns a settingsFormFlow
-user:user.Fills a settings 
-user:bms.Call build(settings, theme, plugins)
-bms:theme.Call build (settings)
-bms:Returns a bot
-bms:plugin.Call build (settings,bot) 
-bms:
-bms:bms.Emit event "build" (bot)
-user:Return information about a bot
+user:bms.1. Call to generate settings FormFlow Dialog (theme, plugins) 
+bms:theme.2. Call getFormFlow()
+bms:3\.Returns FormFlow
+[c:loop foreach plugin in plugins ]
+bms:plugin.4. Call extendFormFlow(formFlow)
+bms:5\. Returns FormFlow 
+[/c]
+user:6\. Return a settingsFormFlow
+user:user.7\. Fill a settings 
+user:bms.8\. Call build(settings, theme, plugins)
+bms:theme.9\. Call build(settings)
+bms:10\. Return a bot
+[c:loop foreach plugin in plugins]
+bms:plugin.11\. Call build(settings,bot) 
+bms:12\. Return a bot
+[/c]
+bms:restify.13\. Publish bot endpoints 
+bms:bms.14\. Store bot
+user:15\. Return information about a bot

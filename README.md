@@ -8,8 +8,8 @@
 # Glossary
  
 - **BMS** - Bot Management System
-- **Theme** - a factory that produces a "skeleton" of the chatbot.  
-- **Plugin** - a component that integrates into skeleton 
+- **Theme** - a factory that produces a basic "skeleton" of the chatbot.  
+- **Plugin** - a component that integrates extra features into "skeleton" 
  
 # Introduction 
 The BotFarm project is an attempt to provide a BMS solution. Major features of this project:
@@ -20,6 +20,8 @@ The BotFarm project is an attempt to provide a BMS solution. Major features of t
  - pure javascript stack, [LokiJS](http://lokijs.org/) used as an storage 
 
 # Usage scenario
+
+**Important!** this diagram describes only a vision on first version of the BMS, not an actual state
 
 - prepare package.json 
 - prepare HTTPS certificates (required by Microsoft Bot Connector)
@@ -37,12 +39,16 @@ The BotFarm project is an attempt to provide a BMS solution. Major features of t
  
 ## Context Diagram
 
+![BotFarm context](https://github.com/gudwin/botfarm/blob/master/documentation/diagrams/context.png?raw=true)
+
 ## Build Sequence Diagram
 
-![Sequence Diagram of building process](https://github.com/gudwin/botfarm/blob/master/documentation/diagrams/sequence.png?raw=true)
+![How BotFarm creates a bot ](https://github.com/gudwin/botfarm/blob/master/documentation/diagrams/sequence.png?raw=true)
+
+**Important!** this diagram describes only a vision on first version of the BMS, not an actual state  
 
 #  Changelog: 
 
- 
+- 0.0.2 - basic version of bot composer prepared
 
 
