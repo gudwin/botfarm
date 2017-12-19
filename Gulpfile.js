@@ -33,26 +33,3 @@ gulp.task('tests', function () {
     runTests();
   });
 });
-gulp.task('code', function () {
-  let ls = null;
-  let runCode= () => {
-    if (ls) {
-      ls.kill();
-      ls = null;
-    }
-    let command = `${process.env['PWD']}/index.js`;
-    let options = {
-      cwd: process.env.PWD + '/',
-      env: process.env,
-      silent: false
-    };
-    ls = fork(command, options);
-  }
-  runCode();
-  // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
-  return watch(['src/**/*.js','index.js', 'config/**/*.json'], function () {
-
-    runCode();
-  });
-
-})
