@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const watch = require('gulp-watch');
-const jasmineNode = require('gulp-JASMINE');
 const fork = require('child_process').fork;
 
 process.on('uncaughtException', function (exception) {
