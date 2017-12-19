@@ -1,23 +1,31 @@
 # BotFarm
 
-> At current moment, package not ready to be reused, that will be fixed soon
+> At current moment, package not ready to be used in production, but that will be fixed soon
 
 > The Library still in an active development, so don't hesitate to propose changes and new features.
 
 
 # Glossary
  
-- **BMS** - Bot Management System
-- **Theme** - a factory that produces a basic "skeleton" of the chatbot.  
-- **Plugin** - a component that integrates extra features into "skeleton" 
+- **BMS** - Bot Management System;
+- **Theme** - a factory that produces a basic "skeleton" of the chatbot;  
+- **Plugin** - a component that integrates extra features into "skeleton";
+- **MBF** - Microsoft Bot Framework;
  
 # Introduction 
-The BotFarm project is an attempt to provide a BMS solution. Major features of this project:
+
+While Microsoft Bot Framework quickly evolves and there are lots of packages for it distributed for free, still, there is a problem with reusability of code that represents business logic. While MBF allows you to compose chat bots from waterfall dialogs and recognizers these components usually are tightly coupled with concrete solution and hardly could be reused.
+ 
+In same moment, development of ready-to-use chatbot requires a lot of efforts from developer for production of components that do not relate to actual business features of the bot. Imagine, you want to produce a chatbot that allows a customer to order a cup of coffee, in that case, you'll probably also have to spend efforts on service components like: user signup, notification of registered users with new updates, handoff-support, help, autodiscoverable dialogs and etc. BotFarm tries to simplify your  life with such components.       
+ 
+The BotFarm project is an attempt to provide a BMS (Bot Management System) solution based on reusable components. The main goal of that project to allow developers to produce reusable components and allow them to quickly compose chat bots. Project features:
 
  - composer for chatbots, the bot composed from themes and plugins;
  - ability to restore and restart internal state and configured bots after reboot;
  - internal "master" bot that manages and configures chatbots, available only from system console; 
  - pure javascript stack, [LokiJS](http://lokijs.org/) used as an storage 
+ 
+
 
 # Usage scenario
 
