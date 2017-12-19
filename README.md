@@ -49,6 +49,6 @@ The BotFarm project is an attempt to provide a BMS solution. Major features of t
 
 #  Changelog: 
 
-- 0.0.2 - basic version of bot composer prepared
+- 0.0.3 - basic version of bot composer prepared
 
 

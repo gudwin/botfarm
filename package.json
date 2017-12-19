@@ -1,6 +1,6 @@
 {
   "name": "botfarm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bot Management System",
   "main": "index.js",
   "dependencies": {
